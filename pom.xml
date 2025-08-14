@@ -3,11 +3,10 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.example</groupId>
-  <artifactId>hello-maven-project</artifactId>
+  <artifactId>hello-world-maven</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
@@ -18,7 +17,7 @@
 
   <build>
     <plugins>
-      <!-- Plugin to create executable jar -->
+      <!-- Optional: plugin to specify main class for executable jar -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
@@ -26,7 +25,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>com.example.App</mainClass>
+              <mainClass>com.example.HelloWorld</mainClass>
             </manifest>
           </archive>
         </configuration>
